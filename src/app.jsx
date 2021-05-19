@@ -1,4 +1,4 @@
-import "./app.css";
+import "./App.css";
 import React, { useEffect, useState } from "react";
 import VideoList from "./components/video_list/video_list";
 // import Navbar from "./components/navbar";
