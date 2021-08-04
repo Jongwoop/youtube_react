@@ -1,68 +1,51 @@
+## Project name
+
+Youtube clone coding
+
+## Description
+
+Youtube clone coding using react and youtube APIs
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+<img src="https://github.com/Jongwoop/youtube_react/blob/main/public/images/screenshot.gif" alt="screenshot" width="1000px" />
 
-In the project directory, you can run:
+## Stack
 
-### `yarn start`
+Youtube APIs, Postman, React Hooks, PostCSS, Axios testable code
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Main function summary
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+**Page 1 - Main Page**  
+Page with search header and 25 most popular videos list below.
 
-### `yarn test`
+**Page 2 - After Search**  
+Page with search header and 25 videos list related to search the word.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Page 3 - Play video**  
+When one of the lists is clicked, a video is played and the video description is following below. Other video lists are shown on the right side but display direction is responsive therefore it could be changed depends on the screen size.
 
-### `yarn build`
+## Architecture
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+```
+Youtube clone coding - react
+├── public/          #static files
+│   └── index.html   #html
+│
+├── src/             #project root
+│   ├── components/  # components + scss
+|   │   ├── search_header/ jsx + scss
+|   │   ├── video_detail/ jsx + scss
+|   │   ├── video_item/ jsx + scss
+|   │   └── video_list/ jsx + scss
+|   │
+│   ├── service/
+|   │   ├── youtube-fetch.js
+|   │   └── youtube.js
+|   │
+│   ├── app.jsx
+│   ├── app.module.css
+│   ├── index.js
+│   └── index.css
+│
+└── package.json
+```
